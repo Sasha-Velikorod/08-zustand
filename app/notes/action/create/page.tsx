@@ -1,5 +1,4 @@
 import CreateNote from '@/components/CreateNote/CreateNote';
-import NoteForm from '@/components/NoteForm/NoteForm';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {

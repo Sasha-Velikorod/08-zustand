@@ -2,7 +2,7 @@ import { NewNote } from '@/types/note';
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 
-type NoteDraftStore = {
+type NoteStore = {
   draft: NewNote;
   setDraft: (note: NewNote) => void;
   clearDraft: () => void;
@@ -13,7 +13,7 @@ const initialDraft: NewNote = {
   tag: 'Todo',
 };
 
-export const useNoteDraftStore = create<NoteDraftStore>()(
+export const useNoteDraftStore = create<NoteStore>()(
   persist(
     (set) => ({
       draft: initialDraft,

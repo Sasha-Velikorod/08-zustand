@@ -7,17 +7,17 @@ import { Roboto } from 'next/font/google';
 
 export const metadata: Metadata = {
   title: 'Create Note App',
-  description: 'An aplication for note taking ando oganization',
+  description: 'An application for note taking ando oganization',
   openGraph: {
     title: 'Create Next App',
-    description: 'An aplication for note-taking ando oganization',
+    description: 'An application for note-taking ando oganization',
     url: 'https://08-zustand-xi-two.vercel.app/',
     images: [
       {
         url: 'https://ac.goit.global/fullstack/react/notehub-og-meta.jpg',
         width: 1200,
         height: 630,
-        alt: 'An aplication for note taking ando oganization',
+        alt: 'An application for note taking ando oganization',
       },
     ],
   },

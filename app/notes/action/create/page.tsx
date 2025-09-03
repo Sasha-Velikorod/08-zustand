@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 };
 
 const CreateNotePage = () => {
-  <CreateNote />;
+  return <CreateNote />;
 };
 
 export default CreateNotePage;

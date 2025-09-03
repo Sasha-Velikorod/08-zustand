@@ -17,8 +17,8 @@ const NoteForm = () => {
 
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['notes'] });
-      router.back();
       clearDraft();
+      router.back();
     },
   });
 
@@ -105,7 +105,6 @@ const NoteForm = () => {
           id="tag"
           name="tag"
           className={css.select}
-          defaultValue="Todo"
           onChange={handleChange}
           value={draft.tag}
         >
@@ -119,7 +118,11 @@ const NoteForm = () => {
       </div>
 
       <div className={css.actions}>
-        <button type="button" className={css.cancelButton}>
+        <button
+          type="button"
+          className={css.cancelButton}
+          onClick={router.back}
+        >
           Cancel
         </button>
         <button type="submit" className={css.submitButton} disabled={false}>

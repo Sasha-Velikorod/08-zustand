@@ -1,0 +1,13 @@
+.input {
+  flex: 1;
+  max-width: 240px;
+  padding: 6px 12px;
+  font-size: 16px;
+  border: 1px solid #4b4747;
+  border-radius: 4px;
+  background: #d0cfce;
+}
+.input:hover,
+.input:active {
+  background-color: #d9d9d9;
+}
